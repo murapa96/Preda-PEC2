@@ -1,0 +1,7 @@
+5
+5
+E E E E L
+E L E E L
+E T E L T
+E C E T T
+L E E T E
