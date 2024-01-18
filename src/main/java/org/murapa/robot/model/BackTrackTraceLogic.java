@@ -33,15 +33,11 @@ public class BackTrackTraceLogic implements Logic {
     public String solve() {
         ArrayList<RouteItem> solution = new ArrayList<RouteItem>();
         StringBuilder returnString = new StringBuilder();
-        // Iniciamos posicion inicial en 0,0
+
         RouteItem pos = new RouteItem(0, 0, this.building.getTile(0, 0));
-        // Guardamos microsegundos antes
         long startTime = System.nanoTime();
-        // Buscamos el tornillo
         boolean found = searchScrew(pos, solution);
-        // Guardamos microsegundos después
         long endTime = System.nanoTime();
-        // Calculamos el tiempo en milisegundos
         long timeElapsed = (endTime - startTime) / 1000000;
         returnString.append("/********* EMPIEZA TRAZA *********/\n");
         returnString.append(trace.toString());
@@ -49,16 +45,12 @@ public class BackTrackTraceLogic implements Logic {
         returnString.append("Tiempo: " + timeElapsed + "ms\n");
 
         if (found) {
-            // Recorremos la solución
             for (int i = 0; i < solution.size(); i++) {
-                // Añadimos a la traza
                 returnString.append(solution.get(i)+"\n");
             }
         } else {
-            // Si no hemos encontrado la solución
             returnString.append("No se encontró un camino hasta el tornillo");
         }
-        // Añadimos el tiempo
         return returnString.toString();
     }
 
