@@ -42,7 +42,7 @@ public class BackTrackLogic implements Logic {
         boolean found = searchScrew(pos, solution);
         long endTime = System.nanoTime();
         long timeElapsed = (endTime - startTime);
-        returnString.append("Tiempo: " + timeElapsed + "nanosegundos\n");
+        returnString.append("Tiempo: " + timeElapsed + " nanosegundos\n");
         
         if (found) {
             for (int i = 0; i < solution.size(); i++) {

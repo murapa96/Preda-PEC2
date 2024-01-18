@@ -38,11 +38,11 @@ public class BackTrackTraceLogic implements Logic {
         long startTime = System.nanoTime();
         boolean found = searchScrew(pos, solution);
         long endTime = System.nanoTime();
-        long timeElapsed = (endTime - startTime) / 1000000;
+        long timeElapsed = (endTime - startTime);
         returnString.append("/********* EMPIEZA TRAZA *********/\n");
         returnString.append(trace.toString());
         returnString.append("/********* TERMINA TRAZA *********/\n");
-        returnString.append("Tiempo: " + timeElapsed + "ms\n");
+        returnString.append("Tiempo: " + timeElapsed + " nanosegundos\n");
 
         if (found) {
             for (int i = 0; i < solution.size(); i++) {
