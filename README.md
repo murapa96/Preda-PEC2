@@ -1,13 +1,5 @@
 # Memoria Práctica 2 Programación y Estructuras de Datos Avanzadas
 
-#### Autor:
-
-- Pablo Ramos Muras
-  - Email: pramos280@alumno.uned.es
-  - DNI: 76584372F
-
-#### Fecha: 18/01/2024
-
 ## Indice
 
 1. [Introducción](#introducción)
